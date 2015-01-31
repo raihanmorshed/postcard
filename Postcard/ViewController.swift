@@ -22,6 +22,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var mailButton: UIButton!
     //button as an outlet not an action
     
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,11 +54,25 @@ class ViewController: UIViewController {
         
         mailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
         //button outlet. Control state allows developers to determine the current touch state of a Button.()arguments in them
-    
+        
+        
+        nameLabel.hidden = false
+        nameLabel.text = enterNameTextField.text
+        nameLabel.textColor = UIColor.blueColor()
+        enterNameTextField.text = " "
+        //Clear the nameTextField's text.
+        enterNameTextField.resignFirstResponder()
     
     
     
     }
+    
+    
+    
+
+    
+    
+    
     
 
 }
