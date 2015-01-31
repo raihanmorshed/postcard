@@ -34,6 +34,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendMailButtonPressed(sender: AnyObject) {
+        //code will evaluate when we press this button
+        // adding a comment here to test "additional commits" in github
     
         
         messageLabel.hidden = false
